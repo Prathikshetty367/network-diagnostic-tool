@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "id": "host-a"
+    },
+    {
+      "id": "switch-1"
+    },
+    {
+      "id": "switch-2"
+    },
+    {
+      "id": "switch-3"
+    },
+    {
+      "id": "host-b"
+    }
+  ],
+  "links": [
+    {
+      "source": "host-a",
+      "target": "switch-1",
+      "latency_ms": 1.2,
+      "bandwidth_mbps": 1000
+    },
+    {
+      "source": "switch-1",
+      "target": "switch-2",
+      "latency_ms": 2.5,
+      "bandwidth_mbps": 1000
+    },
+    {
+      "source": "switch-2",
+      "target": "host-b",
+      "latency_ms": 1.1,
+      "bandwidth_mbps": 500,
+      "status": "down"
+    },
+    {
+      "source": "switch-1",
+      "target": "switch-3",
+      "latency_ms": 1.0,
+      "bandwidth_mbps": 100
+    },
+    {
+      "source": "switch-3",
+      "target": "host-b",
+      "latency_ms": 4.0,
+      "bandwidth_mbps": 100
+    }
+  ]
+}

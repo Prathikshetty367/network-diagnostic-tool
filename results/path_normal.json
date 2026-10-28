@@ -1,0 +1,19 @@
+{
+  "source": "host-a",
+  "destination": "host-b",
+  "path": [
+    "host-a",
+    "switch-1",
+    "switch-2",
+    "host-b"
+  ],
+  "hops": [
+    "switch-1",
+    "switch-2"
+  ],
+  "path_characteristics": {
+    "hop_count": 3,
+    "total_latency_ms": 4.8,
+    "bottleneck_bandwidth_mbps": 500
+  }
+}
